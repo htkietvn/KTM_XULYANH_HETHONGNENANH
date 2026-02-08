@@ -43,8 +43,8 @@ Web application đơn giản để nén và so sánh ảnh với nhiều định
 
 ## Tác giả
 
-**Hoàng Trọng Kiệt**  
-GitHub: [@htkietvn](https://github.com/htkietvn)
+**Hoàng Tuấn Kiệt - DA22TTD**  
+Đại học Trà Vinh
 
 ## License
 
