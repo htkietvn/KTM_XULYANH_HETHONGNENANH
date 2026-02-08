@@ -13,9 +13,7 @@ Web application đơn giản để nén và so sánh ảnh với nhiều định
 - **Phân tích**: Thống kê tỷ lệ nén, dung lượng tiết kiệm
 - **Tải xuống**: Lưu ảnh đã nén về máy
 
-## Demo
 
-![Screenshot](screenshot.png)
 
 ## Cách sử dụng
 
@@ -46,6 +44,4 @@ Web application đơn giản để nén và so sánh ảnh với nhiều định
 **Hoàng Tuấn Kiệt - DA22TTD**  
 Đại học Trà Vinh
 
-## License
 
-MIT License
