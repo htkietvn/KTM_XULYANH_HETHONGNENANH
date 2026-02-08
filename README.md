@@ -13,9 +13,7 @@ Web application đơn giản để nén và so sánh ảnh với nhiều định
 - **Phân tích**: Thống kê tỷ lệ nén, dung lượng tiết kiệm
 - **Tải xuống**: Lưu ảnh đã nén về máy
 
-## Demo
 
-![Screenshot](screenshot.png)
 
 ## Cách sử dụng
 
@@ -37,7 +35,6 @@ Web application đơn giản để nén và so sánh ảnh với nhiều định
 ├── index.html          # Giao diện chính
 ├── script.js           # Logic xử lý ảnh
 ├── style.css           # Styling
-├── QA-giao-vien.md     # Tài liệu Q&A
 └── thesis/             # Tài liệu đồ án
 ```
 
@@ -45,8 +42,4 @@ Web application đơn giản để nén và so sánh ảnh với nhiều định
 
 **Hoàng Tuấn Kiệt - DA22TTD**  
 Đại học Trà Vinh  
-GitHub: [@htkietvn](https://github.com/htkietvn)
 
-## License
-
-MIT License
