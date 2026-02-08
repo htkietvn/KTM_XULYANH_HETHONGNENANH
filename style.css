@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.main-content {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid #e8eef3;
+}
+
+h2 {
+    color: #1e3c72;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    border-bottom: 3px solid #2a5298;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #2c5364;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+/* Upload Section */
+.upload-section {
+    display: block;
+}
+
+.upload-section input[type="file"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #2a5298;
+    border-radius: 5px;
+    background: #f8fafc;
+    display: inline-block;
+}
+
+.upload-section button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+button {
+    background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 5px;
+    box-shadow: 0 2px 8px rgba(42, 82, 152, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(42, 82, 152, 0.35);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Display Section */
+.display-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-header {
+    width: 100%;
+}
+
+.images-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container h3 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    color: #1e3c72;
+}
+
+.image-container p {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 1.1em;
+}
+
+.image-container canvas {
+    flex: 1;
+    min-height: 400px;
+}
+
+canvas {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border: 2px solid #cbd5e0;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    background: #ffffff;
+}
+
+/* Tools Section */
+.tool-group {
+    margin-bottom: 20px;
+    padding: 18px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border-left: 4px solid #2a5298;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.tool-group label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+input[type="range"] {
+    width: 200px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+select {
+    padding: 10px 15px;
+    border: 2px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-right: 10px;
+    background: white;
+    color: #2d3748;
+    transition: border-color 0.2s;
+}
+
+select:focus {
+    outline: none;
+    border-color: #2a5298;
+}
+
+#qualityValue {
+    font-weight: 600;
+    color: #2a5298;
+    font-size: 1.2em;
+}
+
+/* Results Section */
+.results-section {
+    background: #ffffff;
+}
+
+#analysisResults {
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.comparison-table th {
+    background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+    color: white;
+    font-weight: 600;
+}
+
+.comparison-table tr:hover {
+    background: #f1f5f9;
+}
+
+.stat-card {
+    display: inline-block;
+    padding: 18px 28px;
+    margin: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    border-left: 4px solid #2a5298;
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 18px rgba(42, 82, 152, 0.15);
+}
+
+.stat-card strong {
+    color: #1e3c72;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .images-wrapper {
+        flex-direction: column;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    .main-content {
+        padding: 15px;
+    }
+}

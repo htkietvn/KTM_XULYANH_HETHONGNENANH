@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Nén Ảnh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hệ thống Nén Ảnh</h1>
+        </header>
+
+        <div class="main-content">
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <h2>1. Tải ảnh lên</h2>
+                <input type="file" id="imageInput" accept="image/*">
+                <button onclick="loadImage()">Tải ảnh</button>
+            </section>
+
+            <!-- Tools Section -->
+            <section class="tools-section">
+                <h2>2. Cài đặt nén ảnh</h2>
+                
+                <div class="tool-group">
+                    <h3>Chất lượng nén</h3>
+                    <label>Chất lượng (0-100):</label>
+                    <input type="range" id="qualitySlider" min="0" max="100" value="80">
+                    <span id="qualityValue">80</span>
+                </div>
+
+                <div class="tool-group">
+                    <h3>Định dạng nén</h3>
+                    <select id="compressionMethod">
+                        <option value="jpeg">JPEG (Lossy)</option>
+                        <option value="png">PNG (Lossless)</option>
+                        <option value="webp">WebP</option>
+                    </select>
+                </div>
+
+                <div class="tool-group">
+                    <button onclick="applyCompression()" class="compress-btn">Nén ảnh</button>
+                </div>
+            </section>
+
+            <!-- Display Section -->
+            <section class="display-section">
+                <div class="section-header">
+                    <h2>3. Kết quả</h2>
+                </div>
+                <div class="images-wrapper">
+                    <div class="image-container">
+                        <h3>Ảnh gốc</h3>
+                        <canvas id="originalCanvas"></canvas>
+                        <p id="originalInfo"></p>
+                    </div>
+                    <div class="image-container">
+                        <h3>Ảnh đã nén</h3>
+                        <canvas id="processedCanvas"></canvas>
+                        <p id="processedInfo"></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section">
+                <h2>4. Phân tích & So sánh</h2>
+                <div class="action-buttons">
+                    <button onclick="compareResults()">So sánh kết quả</button>
+                    <button onclick="downloadImage()">Tải xuống ảnh</button>
+                </div>
+                <div id="analysisResults"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js?v=3"></script>
+</body>
+</html>
