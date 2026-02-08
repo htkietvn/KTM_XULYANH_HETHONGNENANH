@@ -35,7 +35,6 @@ Web application đơn giản để nén và so sánh ảnh với nhiều định
 ├── index.html          # Giao diện chính
 ├── script.js           # Logic xử lý ảnh
 ├── style.css           # Styling
-├── QA-giao-vien.md     # Tài liệu Q&A
 └── thesis/             # Tài liệu đồ án
 ```
 
